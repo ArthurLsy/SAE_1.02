@@ -87,7 +87,7 @@ if __name__ == '__main__':
         draw(scene,font,persons)
 
         # display update
-        deltaTime = clock.tick()
+        deltaTime = clock.tick(30)
         pygame.display.update()
         frameNumber += 1
         # time.sleep(0.2)
