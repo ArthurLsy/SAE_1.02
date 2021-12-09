@@ -40,14 +40,14 @@ if __name__ == '__main__':
         for j in range (0, len(persons)):
             # update of the person: direction and health state
             engine.update(persons[j])
-            
-            # find collisions between persons
-            colls = engine.computeCollisions(persons,j)
+        
+        # find collisions between persons
+        colls = engine.computeCollisions(persons,j)
 
-            # contaminated persons infect healthy persons
-            engine.processCollisions(persons, colls)
+        # contaminated persons infect healthy persons
+        engine.processCollisions(persons, colls)
 
-            frameNumber += 1
+        frameNumber += 1
                 
 
         endSimulation = engine.endSimulation(persons)

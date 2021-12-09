@@ -77,20 +77,27 @@ if __name__ == '__main__':
             # update of the person : direction and health state
             engine.update(persons[j])
             
-            # find collisions between persons
-            colls = engine.computeCollisions(persons,j)
+        # find collisions between persons
+        colls = engine.computeCollisions(persons,j)
 
-            # contaminated persons infect healthy persons
-            engine.processCollisions(persons, colls)
+        # contaminated persons infect healthy persons
+        engine.processCollisions(persons, colls)
 
-            # draw scene
-            draw(scene,font,persons)
 
-            # display update
-            deltaTime = clock.tick()
-            pygame.display.update()
-            frameNumber += 1
-            # time.sleep(0.2)
+
+
+
+
+
+
+        # draw scene
+        draw(scene,font,persons)
+
+        # display update
+        deltaTime = clock.tick()
+        pygame.display.update()
+        frameNumber += 1
+        # time.sleep(0.2)
                 
 
         # end if there isn't infected person
