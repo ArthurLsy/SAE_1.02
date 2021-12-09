@@ -83,13 +83,6 @@ if __name__ == '__main__':
         # contaminated persons infect healthy persons
         engine.processCollisions(persons, colls)
 
-
-
-
-
-
-
-
         # draw scene
         draw(scene,font,persons)
 
